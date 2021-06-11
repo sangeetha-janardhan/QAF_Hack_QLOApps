@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <method-selectors>
+      <method-selector>
+        <selector-class name="com.qmetry.qaf.automation.testng.pro.QAFMethodSelector" priority="0"/>
+      </method-selector>
+    </method-selectors>
+    <classes>
+      <class name="qaf.example.tests.TC003_NewBooking"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="qaf.example.tests.TC003_NewBooking">
+        <methods>
+          <include name="setupTest"/>
+          <include name="testNewBooking" invocation-numbers="0"/>
+          <include name="setupSuit"/>
+          <include name="setup"/>
+          <include name="afterClass"/>
+          <include name="afterSuit"/>
+          <include name="setupMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- qaf.example.tests.TC003_NewBooking -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
